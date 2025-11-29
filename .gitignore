@@ -1,0 +1,57 @@
+# -------------------------
+# ENTORNOS VIRTUALES
+# -------------------------
+.venv/
+venv/
+env/
+
+# -------------------------
+# CACHE DE PYTHON
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+
+# -------------------------
+# ARCHIVOS DE CONFIGURACIÓN
+# -------------------------
+*.env
+.env.*
+*.ini
+*.cfg
+*.toml
+
+# -------------------------
+# VS CODE
+# -------------------------
+.vscode/
+history/
+*.code-workspace
+
+# -------------------------
+# NOTEBOOKS Y SALIDAS
+# -------------------------
+.ipynb_checkpoints/
+*.nbconvert/
+*checkpoint.ipynb
+
+# -------------------------
+# LOGS
+# -------------------------
+*.log
+
+# -------------------------
+# OTROS ARCHIVOS A IGNORAR
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# ARCHIVOS DE COMPILACIÓN
+# -------------------------
+build/
+dist/
+*.egg-info/
