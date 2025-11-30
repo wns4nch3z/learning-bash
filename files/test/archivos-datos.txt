@@ -1,0 +1,51 @@
+[USUARIOS]
+ID: 1001  Nombre: Ana Torres     Email: ana.torres@example.com
+ID: 1002  Nombre: Luis Gómez     Email: luis.gomez@correo.com
+ID: 1003  Nombre: Marcos Ruiz    Email: marcos.ruiz@test.org
+ID: 1004  Nombre: Carla Pereira  Email: carla_p@empresa.net
+ID: 1005  Nombre: Pedro Sánchez  Email: pedro.sanchez@mail.com
+
+[CONTACTOS]
+Luis   Tel: 555-1234
+Ana    Tel: 555-9981
+Marcos Tel: 555-3311
+
+[CLAVES_INTERNAS]
+usuario=admin   pass=SuperSecret123
+usuario=labor   pass=lab2025
+db_user=root    db_password=toor
+api_key=ABCD-1234-EFGH-5678
+
+[IPS]
+Servidor1: 192.168.1.10
+Servidor2: 10.0.0.22
+ClienteVPN: 172.16.5.100
+ClienteInvitado: 192.168.1.55
+
+[LOGS]
+2025-11-29 15:32:10 ERROR: No se pudo conectar al servidor
+2025-11-29 15:33:44 INFO: Sesión iniciada por ana
+2025-11-29 15:36:02 WARNING: Intento fallido de acceso para usuario root
+2025-11-29 15:37:19 INFO: Archivo /etc/passwd leído
+2025-11-29 15:38:11 ERROR: Permiso denegado en /var/www/
+
+[RUTAS]
+/etc/passwd
+/etc/shadow
+/home/alex/documentos/clave.txt
+/var/log/auth.log
+/usr/bin/python3
+/tmp/sesión.tmp
+
+[VARIOS]
+TOKEN=XYZ123
+email_recovery=password-reset@example.com
+Archivo pendiente: backup_2025.tar.gz
+Ruta temporal: /tmp/test123
+
+[REPETIDOS (para practicar uniq)]
+error
+error
+warning
+info
+error

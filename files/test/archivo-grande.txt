@@ -1,0 +1,160 @@
+[INICIO_DATOS]
+# Archivo de práctica para GREP, sed, awk y regex avanzadas
+# Generado: 2025-11-29
+
+[USERS]
+ID:001 Nombre:Ana Torres         Email: ana.torres@example.com
+ID:002 Nombre:Luis Gomez         Email: l.gomez@dominio.org
+ID:003 Nombre:Maria Perez        Email: maria_perez@empresa.net
+ID:004 Nombre:Carlos Ruiz        Email: crz@correo.com
+ID:005 Nombre:Eva Martinez       Email: eva.m@sample.io
+ID:006 Nombre:Admin User         Email: admin@root.local
+ID:007 Nombre:Test User          Email: test123@test.com
+
+[CONTACTOS]
+Ana     Tel: 555-1234
+Luis    Tel: 555-8866
+Marcos  Tel: 555-0011
+Carla   Tel: 555-7373
+
+[PASSWD_FAKE]
+user=admin pass=SuperSecret123
+user=julio pass=Summer2025!
+user=marcos pass=123456
+user=root   pass=toor
+user=guest  pass=guest
+db_user=root db_pass=DBpass445
+
+[API_KEYS]
+api_key=ABCD-1234-XYZW-9876
+api_key=1122-AABB-3344-CCDD
+api_secret=SECRET-KEY-9988
+token=XYZ-9912-TOKEN
+jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.fake.payload
+
+[IPS]
+192.168.0.1
+192.168.0.22
+10.0.0.5
+10.22.13.250
+172.16.0.14
+8.8.8.8
+200.44.55.66
+1.1.1.1
+
+[LOGS_APP]
+2025-01-01 10:11:12 INFO Usuario Ana inició sesión
+2025-01-01 10:14:55 WARNING Archivo no encontrado
+2025-01-01 10:15:19 ERROR Permiso denegado
+2025-01-01 10:16:44 INFO Conexión establecida
+2025-01-01 10:19:11 ERROR Tiempo de espera agotado
+2025-01-01 10:21:45 WARNING Uso de memoria alto
+2025-01-01 10:23:00 INFO Tarea completada
+
+[LOGS_SERVIDOR]
+2025-05-10 12:11:10 CONN client=192.168.1.10 status=OK
+2025-05-10 12:11:12 CONN client=192.168.1.55 status=FAIL
+2025-05-10 12:11:13 CONN client=10.0.0.22     status=OK
+2025-05-10 12:11:15 CONN client=172.16.5.100  status=FAIL
+2025-05-10 12:11:20 LOGIN user=admin result=SUCCESS
+2025-05-10 12:11:22 LOGIN user=root  result=FAIL
+2025-05-10 12:11:44 LOGIN user=guest result=SUCCESS
+
+[FILES]
+/etc/passwd
+/etc/shadow
+/etc/ssh/sshd_config
+/home/admin/.ssh/authorized_keys
+/home/maria/documentos/finanzas.xlsx
+/var/www/html/index.php
+/usr/bin/python3
+/tmp/session.cache
+/tmp/tmp123
+/tmp/tmp199
+/tmp/tmp200
+
+[RANDOM_TEXT]
+abc123
+bca321
+xyz000
+test_test_test
+AAAAA11111bbbbb
+hola123hola123
+linea sin sentido
+###### ##### #####
+
+[REPETIDOS]
+error
+error
+error
+warning
+warning
+info
+error
+warning
+info
+info
+warning
+error
+info
+
+[PATRONES]
+archivo_v1.log
+archivo_v2.log
+archivo_v10.log
+backup_2020.tar.gz
+backup_2021.tar.gz
+backup_2022.tar.gz
+backup_enero_2025.tar.gz
+log-enero-2025.txt
+log-febrero-2025.txt
+data-001.bin
+data-002.bin
+data-010.bin
+user-0001
+user-0002
+user-0003
+producto-abc-001-x
+producto-xyz-999-z
+email-temp@domain.test
+correo_fake@fake-mail.co
+
+[NUMEROS]
+100
+101
+102
+150
+200
+201
+222
+300
+301
+302
+999
+1000
+1001
+
+[FECHAS_VARIAS]
+2025/01/01
+2025-01-01
+01-01-2025
+1-1-25
+31/12/2024
+2023/05/10
+10-05-2023
+
+[MISMEZCLA]
+IP: 10.1.1.1 puerto: 22 user: root
+IP: 192.168.100.5 puerto: 443 user: admin
+IP: 8.8.4.4 puerto: 53 user: dns
+LoginIntent: user=pedro result=FAIL
+LoginIntent: user=pedro result=FAIL
+LoginIntent: user=pedro result=OK
+Ruta: C:/Windows/System32/drivers/etc/hosts
+Ruta: /var/log/auth.log
+Email olvidado: soporte@ayuda.com
+Email olvidado: contacto@ayuda.com
+Clave: SECRET-123-KEY
+Clave: SECRET-999-KEY
+
+[FIN]

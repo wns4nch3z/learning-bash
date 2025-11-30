@@ -1,0 +1,63 @@
+192.168.1.10 - - [01/Jan/2025:10:11:10 +0000] "GET /index.html HTTP/1.1" 200 1024 "-" "Mozilla/5.0"
+192.168.1.12 - - [01/Jan/2025:10:11:11 +0000] "GET /favicon.ico HTTP/1.1" 200 543 "-" "Mozilla/5.0"
+10.0.0.22 - - [01/Jan/2025:10:11:12 +0000] "POST /login HTTP/1.1" 302 532 "-" "Mozilla/5.0"
+172.16.0.11 - - [01/Jan/2025:10:11:13 +0000] "GET /admin HTTP/1.1" 403 120 "-" "Mozilla/5.0"
+203.0.113.55 - - [01/Jan/2025:10:11:14 +0000] "GET /robots.txt HTTP/1.1" 200 88 "-" "curl/7.68.0"
+192.168.1.15 - - [01/Jan/2025:10:11:20 +0000] "GET /dashboard HTTP/1.1" 200 2500 "-" "Mozilla/5.0"
+
+# Simulación de escaneo
+45.140.12.88 - - [01/Jan/2025:10:12:10 +0000] "GET /phpmyadmin HTTP/1.1" 404 321 "-" "Mozilla/5.0"
+45.140.12.88 - - [01/Jan/2025:10:12:11 +0000] "GET /adminer.php HTTP/1.1" 404 321 "-" "Mozilla/5.0"
+45.140.12.88 - - [01/Jan/2025:10:12:12 +0000] "GET /.env HTTP/1.1" 404 321 "-" "Mozilla/5.0"
+45.140.12.88 - - [01/Jan/2025:10:12:13 +0000] "GET /config.php HTTP/1.1" 404 321 "-" "Mozilla/5.0"
+
+# SQL Injection intento
+88.34.22.19 - - [01/Jan/2025:10:13:00 +0000] "GET /login?user=admin'-- HTTP/1.1" 500 102 "-" "Mozilla/5.0"
+88.34.22.19 - - [01/Jan/2025:10:13:01 +0000] "GET /login?user=1%20OR%201=1 HTTP/1.1" 500 102 "-" "Mozilla/5.0"
+
+# Fuerza bruta
+203.0.113.100 - - [01/Jan/2025:10:15:00 +0000] "POST /login HTTP/1.1" 401 230 "-" "python-requests/2.22"
+203.0.113.100 - - [01/Jan/2025:10:15:01 +0000] "POST /login HTTP/1.1" 401 230 "-" "python-requests/2.22"
+203.0.113.100 - - [01/Jan/2025:10:15:02 +0000] "POST /login HTTP/1.1" 401 230 "-" "python-requests/2.22"
+
+# Archivos estáticos
+192.168.1.10 - - [01/Jan/2025:10:16:10 +0000] "GET /css/style.css HTTP/1.1" 200 1442 "-" "Mozilla/5.0"
+192.168.1.10 - - [01/Jan/2025:10:16:12 +0000] "GET /js/app.js HTTP/1.1" 200 2100 "-" "Mozilla/5.0"
+
+# Peticiones con error 404
+10.10.10.10 - - [01/Jan/2025:10:17:00 +0000] "GET /noexiste HTTP/1.1" 404 99 "-" "Mozilla/5.0"
+10.10.10.10 - - [01/Jan/2025:10:17:02 +0000] "GET /12345 HTTP/1.1" 404 99 "-" "Mozilla/5.0"
+
+# Descarga de archivo
+192.168.1.20 - - [01/Jan/2025:10:18:00 +0000] "GET /files/reporte.pdf HTTP/1.1" 200 123344 "-" "Mozilla/5.0"
+
+# User-agents variados
+192.168.1.30 - - [01/Jan/2025:10:19:00 +0000] "GET / HTTP/1.1" 200 1024 "-" "Googlebot/2.1"
+192.168.1.31 - - [01/Jan/2025:10:19:10 +0000] "GET / HTTP/1.1" 200 1024 "-" "Bingbot/1.0"
+192.168.1.32 - - [01/Jan/2025:10:19:12 +0000] "GET / HTTP/1.1" 200 1024 "-" "curl/8.0.1"
+
+# Varias rutas para practicar
+192.168.1.50 - - [01/Jan/2025:10:20:00 +0000] "GET /api/v1/users HTTP/1.1" 200 3312 "-" "Mozilla/5.0"
+192.168.1.50 - - [01/Jan/2025:10:20:01 +0000] "POST /api/v1/login HTTP/1.1" 200 512 "-" "Mozilla/5.0"
+192.168.1.50 - - [01/Jan/2025:10:20:02 +0000] "GET /api/v2/data HTTP/1.1" 404 88 "-" "Mozilla/5.0"
+
+# Varias extensiones
+192.168.1.77 - - [01/Jan/2025:10:21:00 +0000] "GET /backup.zip HTTP/1.1" 200 30444 "-" "Mozilla/5.0"
+192.168.1.77 - - [01/Jan/2025:10:21:02 +0000] "GET /notes.txt HTTP/1.1" 200 233 "-" "Mozilla/5.0"
+192.168.1.77 - - [01/Jan/2025:10:21:05 +0000] "GET /config.json HTTP/1.1" 200 190 "-" "Mozilla/5.0"
+
+# Más líneas de logs generadas
+192.168.1.90 - - [01/Jan/2025:10:22:00 +0000] "GET /status HTTP/1.1" 200 290 "-" "curl/7.88.1"
+192.168.1.91 - - [01/Jan/2025:10:22:01 +0000] "GET /uptime HTTP/1.1" 200 200 "-" "curl/7.88.1"
+192.168.1.92 - - [01/Jan/2025:10:22:02 +0000] "GET /version HTTP/1.1" 200 199 "-" "curl/7.88.1"
+
+# Ataques típicos de bots
+185.199.110.1 - - [01/Jan/2025:10:23:00 +0000] "GET /wp-login.php HTTP/1.1" 404 231 "-" "Mozilla/5.0"
+185.199.110.1 - - [01/Jan/2025:10:23:02 +0000] "GET /xmlrpc.php HTTP/1.1" 404 231 "-" "Mozilla/5.0"
+185.199.110.1 - - [01/Jan/2025:10:23:04 +0000] "GET /wp-admin HTTP/1.1" 404 231 "-" "Mozilla/5.0"
+
+# Archivos sospechosos
+91.22.33.44 - - [01/Jan/2025:10:24:00 +0000] "GET /.git/config HTTP/1.1" 200 688 "-" "curl/7.45"
+91.22.33.44 - - [01/Jan/2025:10:24:02 +0000] "GET /backup/.env HTTP/1.1" 200 100 "-" "curl/7.45"
+
+# Fin de ejemplo
