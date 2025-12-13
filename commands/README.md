@@ -23,6 +23,7 @@
 * Entender el manual del sistema
 
 ### EJERCICIOS
+Revisar antes [Shebang](../path-bash/1-shebang.ipynb)
   * [1. Hola Mundo](../scripts/niveles/nivel-1/1-hola-mundo.sh)
   * [2. Preparación](../scripts/niveles/nivel-1/2-preparar.sh)
   * [3. Organizar](../scripts/niveles/nivel-1/3-organizar.sh)
