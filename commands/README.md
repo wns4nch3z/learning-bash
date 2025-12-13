@@ -22,6 +22,14 @@
 * Ver, buscar y administrar archivos
 * Entender el manual del sistema
 
+### EJERCICIOS
+  * [1. Hola Mundo](../scripts/niveles/nivel-1/1-hola-mundo.sh)
+  * [2. Preparación](../scripts/niveles/nivel-1/2-preparar.sh)
+  * [3. Organizar](../scripts/niveles/nivel-1/3-organizar.sh)
+  * [4. Clasificar](../scripts/niveles/nivel-1/4-clasificar.sh)
+  * [5. Backup](../scripts/niveles/nivel-1/5-backup.sh)
+  * [6. Temporales](../scripts/niveles/nivel-1/6-temporales.sh)
+
 ---
 
 # **Nivel 2 — Permisos, Usuarios y Procesos**
