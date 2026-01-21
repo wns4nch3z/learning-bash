@@ -1,0 +1,12 @@
+1:Juan Perez:IT:SysAdmin:2500:Madrid:2018-03-15
+2:Ana Gomez:HR:Recruiter:1800:Barcelona:2019-07-01
+3:Carlos Ruiz:IT:Developer:3000:Valencia:2017-01-20
+4:Laura Martinez:Finance:Accountant:2200:Madrid:2020-11-10
+5:Pedro Sanchez:IT:Developer:3200:Barcelona:2016-05-25
+6:Maria Lopez:HR:Manager:2800:Sevilla:2015-09-30
+7:David Torres:Finance:Analyst:2600:Valencia:2018-06-12
+8:Elena Navarro:IT:Support:1900:Madrid:2021-02-01
+9:Jorge Ramirez:Sales:SalesRep:2100:Sevilla:2019-04-18
+10:Sofia Morales:Sales:Manager:3500:Barcelona:2014-12-05
+11:Alberto Diaz:IT:Developer:3100:Madrid:2017-08-22
+12:Lucia Fernandez:HR:Assistant:1700:Valencia:2022-01-10
